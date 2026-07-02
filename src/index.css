@@ -1,5 +1,36 @@
+.container {
+  display: flex;
+}
+
 .plantName {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  gap: 10px;
+}
+
+.plantName li {
+  display: flex;
+  flex-direction: column;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  font-size: 20px;
+  align-items: center;
+  width: 175px;
+  height: 175px;
+}
+
+.plantName p {
+  font-size: 50;
+}
+
+.plantArea {
+  flex: 0 0 75%;
+}
+
+.cartArea {
+  flex: 0 0 25%;
 }

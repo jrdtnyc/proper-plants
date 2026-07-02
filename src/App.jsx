@@ -40,16 +40,22 @@ export default function App() {
   return (
     <>
       <h1>Proper plants</h1>
-      <Plants
-        plants={plants}
-        setSelectedPlant={setSelectedPlant}
-        addToCart={addToCart}
-      />
-      <Cart
-        cart={cart}
-        addToCart={addToCart}
-        reduceCartItemQuantity={reduceCartItemQuantity}
-      />
+      <div className="container">
+        <div className="plantArea">
+          <Plants
+            plants={plants}
+            setSelectedPlant={setSelectedPlant}
+            addToCart={addToCart}
+          />
+        </div>
+        <div className="cartArea">
+          <Cart
+            cart={cart}
+            addToCart={addToCart}
+            reduceCartItemQuantity={reduceCartItemQuantity}
+          />
+        </div>
+      </div>
     </>
   );
 }

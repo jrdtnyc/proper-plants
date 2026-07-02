@@ -3,6 +3,7 @@
 const CartItem = ({ item, addToCart, reduceCartItemQuantity }) => {
   return (
     <div>
+      <h1>{item.image}</h1>
       <h5>{item.name}</h5>
       <p>
         Quantity:{" "}

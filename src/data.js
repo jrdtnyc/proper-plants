@@ -1,4 +1,4 @@
-const PLANTS = [
+export const PLANTLIST = [
   {
     id: 1,
     image: "🌿",
@@ -75,5 +75,3 @@ const PLANTS = [
     name: "Potted Plant",
   },
 ];
-
-export default PLANTS;
